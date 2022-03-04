@@ -5,19 +5,59 @@
       class="full-width row wrap justify-between items-center content-center box"
     >
       <q-btn
-        :to="{ name: 'Home' }"
+        :to="{ name: 'News' }"
         class="bg-green menu-box justify-center items-center"
       >
         <q-img
-          src="img/Picture1.png"
+          src="img/9.png"
           class="imgsize items-center content-center"
         ></q-img>
       </q-btn>
-      <div class="bg-green menu-box"></div>
-      <div class="bg-green menu-box"></div>
-      <div class="bg-green menu-box"></div>
-      <div class="bg-green menu-box"></div>
-      <div class="bg-green menu-box"></div>
+      <q-btn
+        :to="{ name: 'Check' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/10.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Record' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/11.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Contact' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/12.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Station' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/13.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Statis' }"
+        class="bg-#cdcdcd menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/16.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
     </div>
   </q-page>
 </template>
