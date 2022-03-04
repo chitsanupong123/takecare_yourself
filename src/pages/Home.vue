@@ -1,5 +1,5 @@
 <template>
-  <q-page
+  <q-page sdasdas
     >{{ tests[0].name }} {{ tests[1].age }}
     <div v-for="(test, i) in tests" :key="i">
       {{ test.name }} {{ test.age }}
