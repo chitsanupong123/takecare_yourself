@@ -1,34 +1,92 @@
 <template>
-  <q-page sdasdas
-    >{{ tests[0].name }} {{ tests[1].age }}
-    <div v-for="(test, i) in tests" :key="i">
-      {{ test.name }} {{ test.age }}
+  <q-page class="justify-center row"
+    >this is newspage
+    <div
+      class="full-width row wrap justify-between items-center content-center box"
+    >
+      <q-btn
+        :to="{ name: 'Home' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/9.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Check' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/10.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Record' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/11.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Contact' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/12.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Station' }"
+        class="bg-green menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/13.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
+      <q-btn
+        :to="{ name: 'Statis' }"
+        class="bg-#cdcdcd menu-box justify-center items-center"
+      >
+        <q-img
+          src="img/16.png"
+          class="imgsize items-center content-center"
+        ></q-img>
+      </q-btn>
     </div>
-    <Test1 :x="tests[0]"
-  /></q-page>
+  </q-page>
 </template>
 
-<script lang="ts">
-import Test1 from 'components/Test1.vue';
+<script>
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Home',
-  components: {
-    Test1,
-  },
-  setup() {
-    const tests = [
-      { name: 'Aom', age: 22 },
-      { name: 'tiw', age: 33 },
-      { name: 'tiw', age: 33 },
-      { name: 'tiw', age: 33 },
-      { name: 'tiw', age: 33 },
-      { name: 'tiw', age: 33 },
-      { name: 'tiw', age: 33 },
-    ];
-    return { tests };
-  },
 });
 </script>
 
-<style></style>
+<style>
+.imgsize {
+  width: 60px;
+}
+
+.box {
+  width: 100%;
+  max-width: 800px !important;
+}
+
+.menu-box {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  min-height: 100px;
+  max-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+</style>
