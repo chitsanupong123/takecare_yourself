@@ -5,7 +5,7 @@
       class="full-width row wrap justify-between items-center content-center box"
     >
       <q-btn
-        :to="{ name: 'Home' }"
+        :to="{ name: 'News' }"
         class="bg-green menu-box justify-center items-center"
       >
         <q-img

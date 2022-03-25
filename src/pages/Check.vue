@@ -1,5 +1,5 @@
 <template>
-  <q-page>this is Checkpage</q-page>
+  <q-page>this is Checkpag 12</q-page>
 </template>
 
 <script>
